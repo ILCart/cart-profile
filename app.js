@@ -22,5 +22,5 @@ closeButton.addEventListener('click', () => {
 
 // Add the event listener to the follow button
 FollowButton.addEventListener('click', () => {
-  window.open("www.google.com").focus()
+  window.open("https://github.com/ILCart/cart-profile").focus()
 });
