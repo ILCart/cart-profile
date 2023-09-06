@@ -33,4 +33,4 @@ FollowButton.addEventListener('click', () => {
 const Today = new Date() //Gets todays date
 const Start = new Date('August 25, 2023 0:0:0') //Gets the date on August 25th
 const Diff = Today - Start // Gets the difference between the two
-BathroomCounter.textContent = parseInt(Diff/(1000*60*60*24)) //Parses it into milliseconds and then divides ms>s>h>d
+BathroomCounter.textContent = parseInt(Diff/(1000*60*60*24)) //Parses it into milliseconds to days ms>s>h>d
