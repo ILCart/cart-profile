@@ -29,7 +29,8 @@ FollowButton.addEventListener('click', () => {
 FollowButton.addEventListener('click', () => {
   window.open("https://github.com/ILCart/cart-profile").focus()
 });
-const Today = new Date()
-const Start = new Date('August 25, 2023 0:0:0')
-const Diff = Today - Start
-BathroomCounter.textContent = parseInt(Diff/(1000*60*60*24))
+// This just keeps counting up for the "? days without using the bathroom"
+const Today = new Date() //Gets todays date
+const Start = new Date('August 25, 2023 0:0:0') //Gets the date on August 25th
+const Diff = Today - Start // Gets the difference between the two
+BathroomCounter.textContent = parseInt(Diff/(1000*60*60*24)) //Parses it into milliseconds and then divides ms>s>h>d
